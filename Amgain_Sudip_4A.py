@@ -9,10 +9,10 @@ cust_dict = {"amgain1234": 50}
 print('Welcome to the laundromat senor!')
 
 # asking for customer input to either quit the program or continue it
-options = input('Enter any number to contine and quit to exit:\n')
+options = input("Enter any character to contine and 'q' to exit:\n")
 
 #adding while loop with quit to exit the program
-while options != 'quit':
+while options != 'q':
     
     #printing the menues
     print('\nWe have following options in our menues:')
@@ -27,7 +27,7 @@ while options != 'quit':
 
 #adding if-else statement to print what customer asked
     if customer_selection == 1:
-        cont = int(input('If you want to continue type 1 otherwise 0:\n'))
+        cont = int(input('If you want to calculate the total cost customer owes type 1 otherwise 0:\n'))
         if cont == 1:
             print('The total cost customer owes\n')
                 
@@ -61,7 +61,7 @@ while options != 'quit':
             
 
     elif customer_selection == 2:
-        cont = int(input('If you want to continue type 1 otherwise 0:\n'))
+        cont = int(input('If you want to change the price per pound or tax rate type 1 otherwise 0:\n'))
         if cont == 1:
             print('Change the price per pound or tax rate\n')
             
@@ -95,7 +95,7 @@ while options != 'quit':
             continue
         
     elif customer_selection == 3:
-        cont = int(input('If you want to continue type 1 otherwise 0:\n'))
+        cont = int(input('If you want to calculate business made from the customer type 1 otherwise 0:\n'))
         if cont == 1:
             print('Business made from the customer')
             continue

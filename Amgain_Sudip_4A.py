@@ -4,7 +4,6 @@ tax_rate = 6.00 #percent
 #adding customer dictionary to store the cumulative total
 cust_dict = {"amgain1234": 50}  
 
-
 #printing welcome message to the owner
 print('Welcome to the laundromat senor!')
 
@@ -24,8 +23,7 @@ while options != 'q':
     #asking for customer input from the menu
     customer_selection = int(input('Select from:1-4\n'))
 
-
-#adding if-else statement to print what customer asked
+    #adding if-else statement to print what customer asked
     if customer_selection == 1:
         cont = int(input('If you want to calculate the total cost customer owes type 1 otherwise 0:\n'))
         if cont == 1:
@@ -50,6 +48,7 @@ while options != 'q':
             if user_id in cust_dict:
                 cust_dict[user_id] += total
                 print(f'Cumulative total: ${cust_dict[user_id]:.2f}')
+            
             else:
                 cust_dict[user_id] = total
                 print(f'Cumulative total: ${cust_dict[user_id]:.2f}')
